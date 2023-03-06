@@ -7,29 +7,31 @@
     background-color: aqua;
     max-width: 800px;
     margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+        'header header header' 
+        'menu content content'
+        'footer footer footer'
+    ;
 }
 
 .header {
     background-color: green;
     height: 60px;
-}
-
-.wrapper {
-    background-color: orange;
-    /*flex-direction: row-reverse; Cambiar orden de la fila */
-    display: flex;
+    grid-area: header;
 }
 
 .menu {
     background-color: orangered;
-    width: 30%;
+    grid-area: menu;
 }
 
 .content {
     background-color: greenyellow;
-    width: 70%;
+    grid-area: content;
 }
 
 .footer {
     background-color: cadetblue;
+    grid-area: footer;
 }
