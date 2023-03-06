@@ -16,21 +16,20 @@
 
 .wrapper {
     background-color: orange;
+    /*flex-direction: row-reverse; Cambiar orden de la fila */
+    display: flex;
 }
 
 .menu {
     background-color: orangered;
     width: 30%;
-    float: left;
 }
 
 .content {
     background-color: greenyellow;
     width: 70%;
-    float: left;
 }
 
 .footer {
     background-color: cadetblue;
-    clear: left;
 }
